@@ -47,7 +47,7 @@ To complement the initial differential gene expression analysis, a secondary ana
 - **Genes tested:** 21,755
 - **Genes with adjusted p-value (FDR) < 0.05:** 7,588
 - **Significantly upregulated selected genes:** COL10A1, RAB15, FBXL16, NECTIN4, FGFR3 and RSPH1
-- **MMP11:** Did not meet the FDR < 0.05 significance threshold in the limma analysis.
+- **MMP11:** Did not meet the FDR < 0.05 significance threshold in the limma analysis. 
 
 This secondary analysis provides an additional statistical assessment of differences between tumour and normal breast tissue samples. The findings are exploratory and require independent validation. Statistical significance alone does not establish causality or clinical utility.
 
