@@ -39,6 +39,18 @@ COL10A1, NECTIN4, RAB15, FBXL16 and MMP11 were among the highest-ranked genes by
 
 These findings are exploratory. The results do not establish causation, clinical utility or validated biomarkers. Preprocessing, statistical assumptions, potential confounding and independent reproducibility require further assessment before firm biological conclusions can be drawn.
 
+### Statistical Robustness Check Using limma
+
+To complement the initial differential gene expression analysis, a secondary analysis was performed using **limma**, which applies linear models and empirical-Bayes moderation. P-values were adjusted for multiple testing using the Benjamini–Hochberg false discovery rate (FDR) procedure.
+
+**Summary of results:**
+- **Genes tested:** 21,755
+- **Genes with adjusted p-value (FDR) < 0.05:** 7,588
+- **Significantly upregulated selected genes:** COL10A1, RAB15, FBXL16, NECTIN4, FGFR3 and RSPH1
+- **MMP11:** Did not meet the FDR < 0.05 significance threshold in the limma analysis.
+
+This secondary analysis provides an additional statistical assessment of differences between tumour and normal breast tissue samples. The findings are exploratory and require independent validation. Statistical significance alone does not establish causality or clinical utility.
+
 
 ## Visualizations
 
