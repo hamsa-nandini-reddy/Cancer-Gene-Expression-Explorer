@@ -4,7 +4,7 @@
 
 This project explores gene-expression differences between breast cancer tissue and normal breast tissue using publicly available gene-expression data.
 
-The aim is to identify genes showing differences in expression between the two groups and explore these patterns using statistical analysis and visualizations.
+The aim is to identify genes showing differences in expression between the two groups and explore these patterns using statistical analysis and visualizations. 
 
 ## Research Question
 
