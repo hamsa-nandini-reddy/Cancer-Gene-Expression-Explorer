@@ -75,3 +75,31 @@ This project is an educational bioinformatics analysis. It is not intended for d
 - Investigate the biological functions and pathways of top-ranked genes.
 - Compare findings with an independent breast cancer gene-expression dataset.
 - Assess the robustness of the results to alternative preprocessing and analysis choices.
+
+## Visual Results
+
+### 1. Sample Median Expression
+
+![Sample median expression](sample_median_expression.png)
+
+This plot compares median processed expression values across normal and tumour samples. It provides a basic visual check of expression distributions.
+
+### 2. Top Gene Expression Boxplots
+
+![Top gene boxplots](top_gene_boxplots.png)
+
+These boxplots compare expression distributions for selected genes between normal and tumour tissue.
+
+### 3. Differential Expression Volcano Plot
+
+![Volcano plot](volcano_plot.png)
+
+The volcano plot displays the mean expression difference between tumour and normal samples against the negative logarithm of the FDR-adjusted q-value.
+
+### 4. Top Gene Expression Differences
+
+![Top gene differences](top_gene_differences.png)
+
+This chart ranks selected genes by their mean expression difference between tumour and normal samples.
+
+**Interpretation note:** These figures represent exploratory results from one dataset. They do not establish causation or clinical usefulness, and independent validation is needed.
