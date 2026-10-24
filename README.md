@@ -1,2 +1,65 @@
-# Cancer-Gene-Expression-Explorer
-Exploratory analysis of breast cancer gene expression using public GEO dataset GSE42568
+# Cancer Gene Expression Explorer
+
+## Project Overview
+
+This project explores gene-expression differences between breast cancer tissue and normal breast tissue using publicly available gene-expression data.
+
+The aim is to identify genes showing differences in expression between the two groups and explore these patterns using statistical analysis and visualizations.
+
+## Research Question
+
+**Which genes show the clearest expression differences between breast cancer tissue and normal breast tissue in the GSE42568 dataset?**
+
+## Dataset
+
+- **Source:** NCBI Gene Expression Omnibus (GEO)
+- **Dataset:** [GSE42568](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42568)
+- **Platform:** Affymetrix Human Genome U133 Plus 2.0 Array (GPL570)
+- **Data type:** Gene-expression microarray data
+
+## Methods
+
+The analysis notebook performs the following steps:
+
+1. Retrieves the gene-expression dataset and platform annotation.
+2. Maps microarray probes to gene symbols.
+3. Selects a representative probe for each gene using across-sample expression variance.
+4. Compares expression between cancer and normal tissue samples using Welch's t-test.
+5. Applies the Benjamini–Hochberg procedure to adjust for multiple testing.
+6. Generates visualizations to explore expression patterns and differences.
+
+## Visualizations
+
+The project generates four types of plots:
+
+- Sample median expression
+- Top-gene expression boxplots
+- Top gene-expression differences
+- Volcano plot
+
+## Repository Contents
+
+- `Cancer_Gene_Expression_Explorer_Project1.ipynb` — analysis notebook
+- `Cancer_Gene_Expression_Explorer_Results.zip` — exported analysis results and visualizations
+
+## Reproducibility
+
+The analysis was performed in Python using Google Colab. The notebook contains the analysis workflow, and the exported results are provided for inspection.
+
+## Limitations
+
+- This is an exploratory analysis of a single public dataset.
+- Differences in gene expression do not establish causation.
+- Statistical significance does not necessarily imply biological or clinical significance.
+- Results may depend on preprocessing, probe-to-gene mapping, and probe-selection choices.
+- Findings require independent validation before being considered robust biomarkers or clinical evidence.
+
+## Responsible Interpretation
+
+This project is an educational bioinformatics analysis. It is not intended for diagnosis, treatment selection, or clinical decision-making.
+
+## Future Work
+
+- Investigate the biological functions and pathways of top-ranked genes.
+- Compare findings with an independent breast cancer gene-expression dataset.
+- Assess the robustness of the results to alternative preprocessing and analysis choices.
