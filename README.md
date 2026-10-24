@@ -28,6 +28,18 @@ The analysis notebook performs the following steps:
 5. Applies the Benjamini–Hochberg procedure to adjust for multiple testing.
 6. Generates visualizations to explore expression patterns and differences.
 
+
+## Preliminary Results
+
+The exploratory analysis compared gene-expression profiles from 104 breast tumour samples and 17 normal breast tissue samples in the GSE42568 dataset.
+
+Welch's t-tests were performed for 21,737 genes, followed by Benjamini–Hochberg false-discovery-rate adjustment. Using an FDR q-value threshold of less than 0.05, 8,895 genes met the statistical significance threshold in this analysis. Of these, 5,609 showed higher mean expression in tumour samples, while 3,286 showed higher mean expression in normal samples.
+
+COL10A1, NECTIN4, RAB15, FBXL16 and MMP11 were among the highest-ranked genes by statistical evidence in the exported results. COL10A1 showed a mean expression difference of approximately 3.59 units between tumour and normal samples on the analysis scale.
+
+These findings are exploratory. The results do not establish causation, clinical utility or validated biomarkers. Preprocessing, statistical assumptions, potential confounding and independent reproducibility require further assessment before firm biological conclusions can be drawn.
+
+
 ## Visualizations
 
 The project generates four types of plots:
